@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 
@@ -46,13 +47,15 @@ using System.Linq;
             Insercion insercion = new Insercion();
             insercion.Sort(numbers);
             StreamWriter orden = File.AppendText("Ordenamiento.txt");
-            orden.Write("\n The numbers ordered using the Insertion method are:");
+            orden.Write("\n The numbers ordered using the Insertion method are: \n ");
          foreach (var number in numbers)
         {
-            Console.Write(number + " ");
+            orden.Write(number + " ");
         }
         Console.WriteLine();
+        Process.Start(new ProcessStartInfo { FileName = @"Ordenamiento.txt" });
         orden.Close();
+       
            //Console.WriteLine("The numbers ordered using the Insertion method are:" + numbers);
            
 
