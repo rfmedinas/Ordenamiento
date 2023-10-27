@@ -1,10 +1,10 @@
 ﻿using System;
 using System.IO;
 using System.Linq;
-;
 
-namespace Ordenamiento
-{
+
+
+
     internal class Program
     {
         static void Main()
@@ -45,9 +45,17 @@ namespace Ordenamiento
             
             Insercion insercion = new Insercion();
             insercion.Sort(numbers);
-            Console.WriteLine("The numbers ordered using the Insertion method are:" + numbers);
+            StreamWriter orden = File.AppendText("Ordenamiento.txt");
+            orden.Write("\n The numbers ordered using the Insertion method are:");
+         foreach (var number in numbers)
+        {
+            Console.Write(number + " ");
+        }
+        Console.WriteLine();
+        orden.Close();
+           //Console.WriteLine("The numbers ordered using the Insertion method are:" + numbers);
            
 
         }
     }
- }
+ 
