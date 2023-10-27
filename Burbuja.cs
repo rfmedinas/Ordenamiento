@@ -15,7 +15,7 @@ public class Burbuja
             {
                 if (array[j] > array[j + 1])
                 {
-                    // Intercambiar arr[j] y arr[j+1]
+                    // Intercambiar array[j] y array[j+1]
                     int temp = array[j];
                     array[j] = array[j + 1];
                     array[j + 1] = temp;
