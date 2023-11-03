@@ -83,11 +83,11 @@ using System.IO;
         }
     }
 
-    /*public static void ResolveCase(IOrdenamiento method, int[] numbers)
+    public static void ResolveCase(IOrdenamiento method, int[] numbers)
     {
         method = new Burbuja();
         method.Sort(numbers);
        Utils.Print(numbers, method.name());
-    }*/
+    }
 }
 

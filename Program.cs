@@ -40,25 +40,17 @@ internal class Program
                     
                     break;
                 case 2:
-                    orden = new Burbuja();
-                    orden.Sort(numbers);
-                    Utils.Print(numbers, orden.name());
+                    Utils.ResolveCase(new Burbuja(), numbers);
                     break;
                 case 3:
-                    orden = new Shell();
-                    orden.Sort(numbers);
-                    Utils.Print(numbers, orden.name());
+                    Utils.ResolveCase(new Shell(), numbers);
                     break;
                 case 4:
-                    orden = new Seleccion();
-                    orden.Sort(numbers);
-                    Utils.Print(numbers, orden.name());
+                    Utils.ResolveCase(new Seleccion(), numbers);
                     break;
                 case 5:
-                    orden = new Insercion();
-                    orden.Sort(numbers);
-                    Utils.Print(numbers, orden.name());
-                    break;
+                    Utils.ResolveCase(new Insercion(), numbers);
+                     break;
                 case 6:
                     Console.WriteLine("Saliendo del programa...");
                     break;
