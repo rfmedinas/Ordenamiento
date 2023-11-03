@@ -44,7 +44,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Burbuja.cs" />
-    <Compile Include="Excepcion.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="Insercion.cs" />
     <Compile Include="IOrdenamiento.cs" />

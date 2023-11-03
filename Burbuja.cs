@@ -5,7 +5,7 @@ public class Burbuja : IOrdenamiento
 {
     public string name()
     {
-        return "Burbuja";
+        return "Bubble";
     }
 
     public void Sort(int[] array)

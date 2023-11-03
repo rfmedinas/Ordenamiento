@@ -3,7 +3,7 @@ public class Insercion : IOrdenamiento
 {
     public string name()
     {
-       return "Insercion";
+       return "Insertion";
     }
 
     public void Sort(int[] array)

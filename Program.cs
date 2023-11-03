@@ -23,10 +23,10 @@ internal class Program
             switch (option)
             {
                 /** 
-				 ** Case 1 Imprime la información del tren y calcula y muestra el porcentaje de ocupación del tren
+				 ** Case 1 Solicita la Informacion de la cantidad de numeros que se van a ordenar
 				  **/
                 case 1:
-                    Console.WriteLine("Digite la Cantidad de numeros a ordenar");
+                    Console.WriteLine("Enter the number of numbers to order");
                     try
                     {
                         size = Convert.ToInt32(Console.ReadLine());
@@ -52,10 +52,10 @@ internal class Program
                     Utils.ResolveCase(new Insercion(), numbers);
                      break;
                 case 6:
-                    Console.WriteLine("Saliendo del programa...");
+                    Console.WriteLine("Exiting the program...");
                     break;
                 default:
-                    Console.WriteLine("Opción inválida. Por favor, seleccione una opción válida.");
+                    Console.WriteLine("Invalid option. Please select a valid option");
                     break;
             }
 

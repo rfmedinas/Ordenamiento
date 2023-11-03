@@ -65,13 +65,13 @@ using System.IO;
     public static int MostrarMenu()
     {
 
-        Console.WriteLine("Seleccione una opción:");
-        Console.WriteLine("1. Digite la cantidad de numeros que desea ordenar");
-        Console.WriteLine("2. Ordenar por metodo Burbuja.");
-        Console.WriteLine("3. Ordenar por metodo Shell.");
-        Console.WriteLine("4. Ordenar por metodo seleccion");
-        Console.WriteLine("5. Ordenar por metodo insercion");
-        Console.WriteLine("6. Salir.");
+        Console.WriteLine("Select an option:");
+        Console.WriteLine("1. Enter the number of numbers you want to order");
+        Console.WriteLine("2. Sort by Bubble method");
+        Console.WriteLine("3. Sort by Shell method");
+        Console.WriteLine("4. Sort by selection method");
+        Console.WriteLine("5. Sort by insertion method");
+        Console.WriteLine("6. Exit");
 
         if (int.TryParse(Console.ReadLine(), out int opcion))
         {
@@ -85,7 +85,6 @@ using System.IO;
 
     public static void ResolveCase(IOrdenamiento method, int[] numbers)
     {
-        method = new Burbuja();
         method.Sort(numbers);
        Utils.Print(numbers, method.name());
     }
