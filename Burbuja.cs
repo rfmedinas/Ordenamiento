@@ -1,11 +1,13 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-public class Burbuja
+
+public class Burbuja : IOrdenamiento
 {
+    public string name()
+    {
+        return "Burbuja";
+    }
+
     public void Sort(int[] array)
     {
         int n = array.Length;

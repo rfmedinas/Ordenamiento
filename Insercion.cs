@@ -1,6 +1,11 @@
 ﻿using System;
-public class Insercion
+public class Insercion : IOrdenamiento
 {
+    public string name()
+    {
+       return "Insercion";
+    }
+
     public void Sort(int[] array)
     {
         int n = array.Length;

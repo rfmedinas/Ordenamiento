@@ -1,7 +1,13 @@
 ﻿using System;
-public class Seleccion
+public class Seleccion : IOrdenamiento
 {
+    public string name()
+    {
+        return "Seleccion";
+    }
+
     public void Sort(int[] array)
+
     {
         int n = array.Length;
         for (int i = 0; i < n - 1; i++)

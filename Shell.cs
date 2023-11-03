@@ -1,6 +1,12 @@
 ﻿using System;
-public class Shell
+public class Shell : IOrdenamiento
+
 {
+    public string name()
+    {
+        return "Shell";
+    }
+
     public void Sort(int[] array)
     {
         int n = array.Length;

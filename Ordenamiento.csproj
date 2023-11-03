@@ -45,7 +45,9 @@
   <ItemGroup>
     <Compile Include="Burbuja.cs" />
     <Compile Include="Excepcion.cs" />
+    <Compile Include="Utils.cs" />
     <Compile Include="Insercion.cs" />
+    <Compile Include="IOrdenamiento.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Seleccion.cs" />
