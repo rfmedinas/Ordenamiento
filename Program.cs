@@ -1,30 +1,40 @@
 ﻿using System;
+using System.Data;
 using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.CompilerServices;
 
 internal class Program
-    {
-    
+/**
+* Fecha: 03 de noviembre de 2023
+* Autor: Raúl Fernando Medina Sandoval
+* Descrpición:Este programa realiza operaciones de ordenamiento utilizando los métodos de ordenamineto, Burbuja, Shell, Selección e Inserción.
+**/
+{
+
 
     static void Main()
         {
-
+        // Declaración de la interfaz IOrdenamiento para el polimorfismo.
         IOrdenamiento orden;
-               
+        // Variable para almacenar la opción seleccionada por el usuario.        
         int option;
+        // Tamaño del arreglo de números a ordenar.
         int size = 0;
+        // Arreglo de enteros que almacenará los números a ordenar.
         int[] numbers = new int [size];
+        // Bucle do -while que ejecuta el programa hasta que el usuario elige salir.
         do
-        {
+         {
+            // Muestra el menú y obtiene la opción del usuario. 
             option = Utils.MostrarMenu();
 
             switch (option)
             {
-                /** 
-				 ** Case 1 Solicita la Informacion de la cantidad de numeros que se van a ordenar
-				  **/
+                 
+				 //Case 1 Solicita la Informacion de la cantidad de numeros que se van a ordenar
+				 
                 case 1:
                     Console.WriteLine("Enter the number of numbers to order");
                     try
@@ -39,18 +49,34 @@ internal class Program
                     }
                     
                     break;
+                
+                // Proceso que realiza el ordenamiento con el método Burbuja
+               
                 case 2:
                     Utils.ResolveCase(new Burbuja(), numbers);
-                    break;
+                    break; 
+                    
+                   // Proceso que realiza el ordenamiento con el método Shell
+                   
+
                 case 3:
                     Utils.ResolveCase(new Shell(), numbers);
                     break;
+               
+                 // Proceso que realiza el ordenamiento con el método Selección
+               
                 case 4:
                     Utils.ResolveCase(new Seleccion(), numbers);
                     break;
+                 
+                // Proceso que realiza el ordenamiento con el método de Inserción
+               
                 case 5:
                     Utils.ResolveCase(new Insercion(), numbers);
                      break;
+               
+                // salir del programa
+                
                 case 6:
                     Console.WriteLine("Exiting the program...");
                     break;
