@@ -53,31 +53,61 @@ internal class Program
                 // Proceso que realiza el ordenamiento con el método Burbuja
                
                 case 2:
-                    Utils.ResolveCase(new Burbuja(), numbers);
-                    break; 
-                    
-                   // Proceso que realiza el ordenamiento con el método Shell
-                   
+                    if (size != 0)
+                    {
+                        Utils.ResolveCase(new Burbuja(), numbers);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Please complete Option 1 before proceeding to Option 2.");
+                    }
+                    break;
+
+                // Proceso que realiza el ordenamiento con el método Shell
+
 
                 case 3:
-                    Utils.ResolveCase(new Shell(), numbers);
+                    if (size != 0)
+                    {
+                        Utils.ResolveCase(new Shell(), numbers);
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Please complete option 1 before proceeding to Option 3 .");
+                    }
                     break;
-               
-                 // Proceso que realiza el ordenamiento con el método Selección
-               
+
+                // Proceso que realiza el ordenamiento con el método Selección
+
                 case 4:
-                    Utils.ResolveCase(new Seleccion(), numbers);
+                    if (size != 0)
+                    {
+                        Utils.ResolveCase(new Seleccion(), numbers);
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Please complete option 1 before proceeding to Option 4 .");
+                    }
                     break;
-                 
+
                 // Proceso que realiza el ordenamiento con el método de Inserción
-               
+
                 case 5:
-                    Utils.ResolveCase(new Insercion(), numbers);
-                     break;
-               
+
+                    if (size != 0)
+                    {
+                        Utils.ResolveCase(new Insercion(), numbers);
+                    }
+                    else
+                    {
+                        Console.WriteLine(" Please complete option 1 before proceeding to Option 5.");
+                    }
+                    break;
+
                 // salir del programa
-                
+
                 case 6:
+
                     Console.WriteLine("Exiting the program...");
                     break;
                 default:
